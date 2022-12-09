@@ -111,7 +111,7 @@ footer {
     align-content: center;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (max-width: 760px) {
     .homepage {
         background-image: url("../img/cover.jpg");
         background-position: top center;
@@ -131,7 +131,7 @@ footer {
     }
   }
 
-  @media screen and (min-width: 360px) {
+  @media screen and (max-width: 380px) {
     body, main {
         padding: 0 0;
         margin: 0;
@@ -164,7 +164,108 @@ footer {
     }
   }
 
-/* ABOUT PAGE styling */
-.profile {
-    display: f
+/* PLAYLIST styling */
+.music {
+    background-color: #eeeff0;
 }
+.playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 2em auto;
+
+    max-width: 25%;
+    padding: 1rem;
+}
+.playing-song {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h4 {
+    margin: auto;
+}
+.song-buttons {
+    width: 30vw;
+}
+.buttonsPlayer {
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 3px 3px 5px #b5b5b5, -1px -5px 5px #f2f2f2;
+
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-self: flex-end;  
+}
+
+#cover {
+    margin: 0.75rem 0;
+    max-width: 15em;
+    border-radius: 50%;
+    
+}
+/* TO BE FIXED LATER
+.album-cover {
+    animation-play-state: paused;
+}
+.album-cover.play img {
+    animation: rotate 1s linear 0s infinite;
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+
+.songlist {
+    margin: auto;
+    padding: 2em;
+    gap: 1em;
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.2);
+} 
+#song {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid rgba(220, 162, 245, 0.5);
+    
+    list-style-type: none;
+
+    color: white;
+}
+.duration  {
+    align-self: flex-end;
+}
+#playThis {
+    max-width: 2em;
+    max-height: 2em;
+
+}
+
+.Btn {
+    height: 45px;
+    margin: 1em;
+    color: #193b52;
+    padding: .25rem;
+    max-width: 4em;
+    max-height: 4em;
+    background-color: #193b52;
+    border: none;
+    border-radius: 2em;
+
+}
+
