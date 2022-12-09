@@ -195,7 +195,7 @@ h4 {
 }
 .buttonsPlayer {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 100px;
     width: 100%;
     box-shadow: 3px 3px 5px #b5b5b5, -1px -5px 5px #f2f2f2;
 
@@ -266,6 +266,46 @@ h4 {
     background-color: #193b52;
     border: none;
     border-radius: 2em;
-
 }
 
+.album-list {
+    background-image: url("../img/bg.jpg");
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.screen {
+    height: 100vh;
+    padding: 0 250px;
+    background-color: rgba(25, 59, 82, .5);
+    background-blend-mode: multiply;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: flex;
+    flex:auto;
+
+    
+}
+.album-links a img {
+    max-width: 40px;
+}
+.album-links {
+    display: flex;
+    justify-content: center;
+}
+figure {
+    margin: 1em;
+    width: 40%;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+}
+figcaption {
+    margin: .5em;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+}
