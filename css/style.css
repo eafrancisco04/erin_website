@@ -7,7 +7,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-height: 100vh;
 }
 h1 {
@@ -136,6 +136,13 @@ footer {
         padding: 0 0;
         margin: 0;
         place-content: center;
+
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
     }
     .homepage {
         background-image: url("../img/cover.jpg");
@@ -156,3 +163,8 @@ footer {
         width: 100%;
     }
   }
+
+/* ABOUT PAGE styling */
+.profile {
+    display: f
+}
