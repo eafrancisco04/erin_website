@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    margin: 1em;
+    font-size: 1.5em;
+    color: #193b52;
+    text-decoration: underline 2px #193b52;
+}
+h3 {
+    color: #59421f;
+    text-decoration: underline 2px #59421f;
+}
+/* HEADER styling*/
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+header h3 {
+    color: white;
+    text-decoration: none;
+}
+/* SOCIAL ICONS SIDE styling */
+aside {
+    position: fixed;
+    padding: 2em;
+    top: 100px;
+}
+aside img {
+    margin: 1em;
+    width: 50px;
+    background-color: white;
+    border-radius: 50px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    max-height: 4em;
+}
+/* FOOTER styling */
+footer {
+    padding: 1em;
+    background-color: #3b5668;
+    color: #e7f2fc
+}
+/* HOMEPAGE styling */
+
+.homepage {
+    background-image: url("../img/cover.jpg");
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cover {
+    height: 100vh;
+}
+.latest {
+    margin: 3em;
+    padding: 0 250px;
+    height: 100vh;
+    place-content: center;
+    display: flex;
+    align-items: center;
+}
+.new-album {
+    background-color: #eeeff0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.new-album div {
+    width: 50%;
+    padding: 1em;
+}
+.album {
+    width: 100%;
+}
+
+.new-video {
+    background-color: #d5e5f0;
+    height: 90vh;
+    text-align: center;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+@media screen and (min-width: 760px) {
+    .homepage {
+        background-image: url("../img/cover.jpg");
+        background-position: top center;
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+    .cover {
+        height: 80vh;
+    }
+    .latest {
+        padding: 0 0;
+        margin: 1em;
+        height: 100vh;
+    }
+    .new-album div {
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    body, main {
+        padding: 0 0;
+        margin: 0;
+        place-content: center;
+    }
+    .homepage {
+        background-image: url("../img/cover.jpg");
+        background-position: top center;
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+    .cover {
+        height: 80vh;
+    }
+    .latest {
+        padding: 0 0;
+        margin: 1em;
+        height: 100vh;
+        align-items: center;
+    }
+    .new-album div {
+        width: 100%;
+    }
+  }
