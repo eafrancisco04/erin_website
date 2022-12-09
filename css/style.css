@@ -309,3 +309,16 @@ figcaption {
     font-size: 1.25em;
     font-weight: 500;
 }
+
+/* VIDEOS styling */
+.video-grid {
+    margin: auto;
+    place-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.main-video {
+    margin: auto;
+    grid-column: 1 /3;
+}
