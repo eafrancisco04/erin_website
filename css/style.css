@@ -32,6 +32,9 @@ h4 {
     font-family: 'Abril Fatface', 'Times New Roman', Times, serif;
     letter-spacing: 1px;
 }
+h5 {
+    font-size: 1.5em;
+}
 /* HEADER styling*/
 header {
     text-align: center;
@@ -130,22 +133,20 @@ footer {
     align-content: center;
     flex: 1 50%;
 
+    background-color: #3b5668;
+    color: white;
+
 }
 .bio {
     margin: auto;
     display: flex;
     align-content: center;
-
-}
-.about {
-    background-color: #3b5668;
-    color: white;
 }
 .bio img {
     width: 100%;
 }
 .bio div {
-    padding: 1em;
+    padding: 2em;
     width: 50%;
 }
 .bio p {
