@@ -326,30 +326,67 @@ figcaption {
         background-size: 250%;
         background-repeat: no-repeat;
       }
-      .cover {
+    .cover {
         height: 80vh;
       }
-      .latest {
+    .latest {
         padding: 0 0;
         margin: 1em;
         height: 100vh;
       }
-      .new-album div {
+    .new-album div {
         width: 100%;
       }
-      .social-icons {
+    .social-icons {
         display: flex;
         flex-direction: column;
       }
-      aside img {
+    aside img {
         margin: 0.2em;
         width: 30px;
         background-color: white;
       }
-      aside {
+    aside {
         padding: 0em;
         top: 100px;
-  }
+    }
+
+    /* About */
+    .about {
+        margin-top: 2em;
+    }
+    .profile {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex: 1 100%;
+    
+        background-color: #193b52;
+        color: white;
+    
+    }
+    .bio {
+        margin: auto;
+        display: flex;
+        flex: column;
+        align-content: center;
+    }
+    .bio img {
+        width: 100%;
+    }
+    .bio div {
+        padding: 2em;
+        width: 100%;
+    }
+    .bio p {
+        margin: 1em;
+    }
+    .bio .prof-pic {
+        padding: 0;
+    }
 }
 
   @media screen and (max-width: 580px) {
