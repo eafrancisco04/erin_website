@@ -36,6 +36,7 @@ h5 {
 main { 
     margin: auto; 
     place-content: center;
+
 }
 /* HEADER styling*/
 header {
@@ -71,9 +72,10 @@ header a:hover {
 
 /* SOCIAL ICONS SIDE styling */
 aside {
-    position: sticky;
+    position: fixed;
     padding: 2em;
     top: 100px;
+
   }
   aside img {
     margin: 1em;
@@ -141,6 +143,9 @@ footer {
 }
 
 /* ABOUT styling */
+.about {
+    margin-top: 2em;
+}
 .profile {
     margin: auto;
     display: flex;
@@ -305,7 +310,7 @@ figcaption {
     place-content: center;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
 }
 .main-video {
     margin: auto;
@@ -334,6 +339,7 @@ figcaption {
       }
       .social-icons {
         display: flex;
+        flex-direction: column;
       }
       aside img {
         margin: 0.2em;
@@ -344,6 +350,7 @@ figcaption {
         padding: 0em;
         top: 100px;
   }
+}
 
   @media screen and (max-width: 580px) {
     body, main {
