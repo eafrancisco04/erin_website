@@ -22,9 +22,7 @@ h2 {
     letter-spacing: 2px;
 }
 h3 {
-    color: #59421f;
     font-size: 1.5em;
-    text-decoration: underline 2px #59421f;
     font-family: 'Abril Fatface', 'Times New Roman', Times, serif;
     letter-spacing: 2px;
 }
@@ -35,44 +33,63 @@ h4 {
 h5 {
     font-size: 1.5em;
 }
+main { 
+    margin: auto; 
+    place-content: center;
+}
 /* HEADER styling*/
 header {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #59421f;
 }
 .menu {
     display: flex;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+    color: #59421f
 }
-.homepage header h3 {
+
+.homepage header a {
     color: white;
     text-decoration: none;
 }
+.homepage header a:hover {
+    text-decoration: underline 2px white;
+}
+header a { 
+    color: #59421f;
+}
+header a:hover {
+    text-decoration: underline 2px #59421f;
+}
+
+
+
 /* SOCIAL ICONS SIDE styling */
 aside {
-    position: fixed;
+    position: sticky;
     padding: 2em;
     top: 100px;
-}
-aside img {
+  }
+  aside img {
     margin: 1em;
     width: 50px;
     background-color: white;
     border-radius: 50px;
-}
-li {
+  }
+  li {
     list-style: none;
-}
-a {
+  }
+  a {
     text-decoration: none;
-}
-.logo {
+  }
+  .logo {
     max-height: 4em;
-}
+  }
 /* FOOTER styling */
 footer {
     padding: 1em;
@@ -133,7 +150,7 @@ footer {
     align-content: center;
     flex: 1 50%;
 
-    background-color: #3b5668;
+    background-color: #193b52;
     color: white;
 
 }
@@ -202,25 +219,6 @@ h4 {
     border-radius: 50%;
     
 }
-/* TO BE FIXED LATER
-.album-cover {
-    animation-play-state: paused;
-}
-.album-cover.play img {
-    animation: rotate 1s linear 0s infinite;
-    animation-play-state: running;
-  }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  } */
-
 
 .songlist {
     margin: auto;
@@ -318,22 +316,33 @@ figcaption {
 
 @media screen and (max-width: 760px) {
     .homepage {
-        background-image: url("../img/cover.jpg");
+        background-image: url('../img/cover.jpg');
         background-position: top center;
         background-size: 250%;
         background-repeat: no-repeat;
-    }
-    .cover {
+      }
+      .cover {
         height: 80vh;
-    }
-    .latest {
+      }
+      .latest {
         padding: 0 0;
         margin: 1em;
         height: 100vh;
-    }
-    .new-album div {
+      }
+      .new-album div {
         width: 100%;
-    }
+      }
+      .social-icons {
+        display: flex;
+      }
+      aside img {
+        margin: 0.2em;
+        width: 30px;
+        background-color: white;
+      }
+      aside {
+        padding: 0em;
+        top: 100px;
   }
 
   @media screen and (max-width: 580px) {
